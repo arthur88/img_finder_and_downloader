@@ -11,7 +11,7 @@ function save_image($url){
 }
 
 for($i = 0; $i <= 9999; $i++){
-  $url = 'http://www.automokyklos.lt/testas/teorijos_testas_'.$i.'.jpg';
+  $url = 'http://www.mywebsite.com/imgs/'.$i.'.jpg';
   $img_size = GetImageSize($url);
   if (!empty($img_size)) {  save_image($url);   } else {}
 }
